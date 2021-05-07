@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root{
+  --font-color-welcome: rgba(12, 12, 12, 0.829);
+  --bg-color-container: rgba(231, 214, 220, 0.055);
+  --shadow-color-container: rgba(17, 17, 17, 0.74);
+  --bg-color-input: rgba(255,255,255,0.3);
+  --border-color-inputFocus: rgba(201, 36, 63, 0.712);
+  --font-color-iconEye: rgba(34, 27, 27, 0.74);
+  --font-color-link: rgba(201, 36, 63, 0.425);
+  --color-buttonSubmit: rgba(201, 36, 63, 0.712);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-image: url('/images/rock.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: 'Itim', cursive;
+}
+
+input{
+  outline: none;
+}
+
+.welcome{
+  text-align: center;
+  color: var(--color-welcome);
+}
+
+.container{
+  padding: 2%;
+  margin: 8% auto;
+  width: 30%;
+  background-color: var(--bg-container);
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 10px 50px var(--shadow-color-container);
+}
+
+.title{
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.inEmail, .inPassword{
+  height: 2.5em;
+  border-radius: 5px;
+  border: none;
+  padding: 0 1.2em;
+  background-color: var(--bg-color-input);
+}
+
+.inEmail:focus,.inPassword:focus{
+  border: 1px solid var(--border-color-inputFocus);
+}
+
+.password{
+  position: relative;
+  height: 2.5em;
+}
+
+.inPassword{
+  position: absolute;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-right: 2.2em;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 25%;
+  right: 10px;
+  color: var(--font-color-iconEye);
+}
+
+.options > :last-child{
+  float: right;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--font-color-link);
+}
+
+
+.options > label:last-child:hover{
+  cursor: pointer;
+}
+
+
+.submit{
+  margin-top: 10px;
+  color: var(--color-buttonSubmit);
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid var(--color-buttonSubmit);
+  transition: 1.5s all;
+}
+
+.submit:hover{
+  cursor: pointer;
+  color: white;
+  border: 1px solid transparent;
+  background-color: var(--color-buttonSubmit);
+  border: 1px solid var(--color-buttonSubmit);
+  transition: 1.5s all;
+}
+
+.footer{
+  color: white;
+  text-align: center;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 1392px){
+  .container{
+    margin: 10% auto;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 980px){
+  .container{
+    margin: 17% auto;
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 770px){
+  .container{
+    margin: 20% auto;
+    width: 70%;
+    padding: 4%;
+  }
+}
+
+@media only screen and (max-width: 570px){
+  .container{
+    margin: 25% auto;
+    width: 90%;
+    padding: 4%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
