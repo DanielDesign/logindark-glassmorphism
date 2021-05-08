@@ -6,7 +6,6 @@
   --bg-color-container: rgba(231, 214, 220, 0.055);
   --shadow-color-container: rgba(17, 17, 17, 0.74);
   --bg-color-input: rgba(255,255,255,0.3);
-  /* --border-color-inputFocus: rgba(201, 36, 63, 0.712); */
   --font-color-iconEye: rgba(34, 27, 27, 0.74);
   --font-color-link: rgba(201, 36, 63, 0.425);
   --color-buttonSubmit: rgba(201, 36, 63, 0.712);
@@ -26,6 +25,8 @@ body{
   background-attachment: fixed;
   background-position: center center;
   font-family: 'Itim', cursive;
+  width: 100vw;
+  height: 100vh;
 }
 
 input{
@@ -37,9 +38,18 @@ input{
   color: var(--color-welcome);
 }
 
+.main,.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  height: 80%;
+}
+
 .container{
   padding: 2%;
-  margin: 8% auto;
   width: 30%;
   background-color: var(--bg-container);
   border-radius: 24px;
@@ -129,25 +139,23 @@ input{
   color: white;
   text-align: center;
   font-size: 1em;
+  height: 20%;
 }
 
 @media only screen and (max-width: 1392px){
   .container{
-    margin: 10% auto;
     width: 40%;
   }
 }
 
 @media only screen and (max-width: 980px){
   .container{
-    margin: 17% auto;
     width: 55%;
   }
 }
 
 @media only screen and (max-width: 770px){
   .container{
-    margin: 20% auto;
     width: 70%;
     padding: 4%;
   }
@@ -155,7 +163,6 @@ input{
 
 @media only screen and (max-width: 570px){
   .container{
-    margin: 25% auto;
     width: 90%;
     padding: 4%;
   }
