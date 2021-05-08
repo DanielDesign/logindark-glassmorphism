@@ -6,7 +6,7 @@
   --bg-color-container: rgba(231, 214, 220, 0.055);
   --shadow-color-container: rgba(17, 17, 17, 0.74);
   --bg-color-input: rgba(255,255,255,0.3);
-  --border-color-inputFocus: rgba(201, 36, 63, 0.712);
+  /* --border-color-inputFocus: rgba(201, 36, 63, 0.712); */
   --font-color-iconEye: rgba(34, 27, 27, 0.74);
   --font-color-link: rgba(201, 36, 63, 0.425);
   --color-buttonSubmit: rgba(201, 36, 63, 0.712);
@@ -20,7 +20,7 @@
 
 
 body{
-  background-image: url('/images/rock.jpg');
+  background-image: url('./images/rock.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -69,7 +69,7 @@ input{
 }
 
 .inEmail:focus,.inPassword:focus{
-  border: 1px solid var(--border-color-inputFocus);
+  border: 1px solid var(--color-buttonSubmit);
 }
 
 .password{
